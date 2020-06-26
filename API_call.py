@@ -14,6 +14,7 @@ class bcolors:
 
 apikey = 'ed70b3a0'
 f = open("clean.txt", "r")
+print('------' + bcolors.OKGREEN + 'IMDB Rating' + bcolors.ENDC + '------' + bcolors.HEADER + 'Metascore' + bcolors.ENDC + '------')
 for line in f:
 	arg=line.strip().replace(' ', '+')
 	try:
